@@ -103,13 +103,15 @@ def generate_contract_pdf(order_data: dict, order_id: str, match_data: dict, pro
     # Move to the beginning of the StringIO buffer
     pdf_buffer.seek(0)
 
+    base_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "contracts"))
+    pdf_filename = os.path.join(base_path, f"{order_id}_contract.pdf")
+
     # Save PDF to a file
-    pdf_filename = f"contracts/{order_id}_contract.pdf"
     with open(pdf_filename, 'wb') as f:
+        print(f"Saving contract PDF to {pdf_filename}")
         f.write(pdf_buffer.read())
 
     return pdf_filename
-
 
 # Function to integrate with the payment gateway
 def initiate_payment(order_data: dict):
