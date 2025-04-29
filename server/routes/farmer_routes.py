@@ -54,7 +54,7 @@ async def register_farmer(data: FarmCreate):
     farm_doc = {
         "farmer_id": data.farmer_id,
         "name": data.name,
-        "location": data.location,
+        "location": data.location.dict(),
         "fulladdress": data.fulladdress,
         "total_beebox": data.total_beebox,
         "bee_box_capacity_utilised": 0,
@@ -67,6 +67,7 @@ async def register_farmer(data: FarmCreate):
     }
     
     #sync name and location to farmer collection
+    
     await farmer_collection.update_one(
         {"_id": ObjectId(data.farmer_id)},
         {

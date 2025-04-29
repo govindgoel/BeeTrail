@@ -50,9 +50,14 @@ async def verify_otp(data: OTPVerify):
     }
 
     if data.userRole == "farmer":
-        result = await farmer_collection.insert_one(user_doc)
+        #check if the user already exists
+        data = await farmer_collection.find_one({"mobileNumber": data.mobileNumber})
+        if not data:
+            result = await farmer_collection.insert_one(user_doc)
     elif data.userRole == "beekeeper":
-        result = await beekeeper_collection.insert_one(user_doc)
+        data = await beekeeper_collection.find_one({"mobileNumber": data.mobileNumber})
+        if not data:
+            result = await beekeeper_collection.insert_one(user_doc)
     else:
         raise HTTPException(status_code=400, detail="Invalid user role")
 
@@ -61,5 +66,6 @@ async def verify_otp(data: OTPVerify):
     return {
         "message": f"{data.userRole} created successfully",
         "userRole": data.userRole,
+        "data": data,
         "id": str(result.inserted_id)
     }
