@@ -68,5 +68,5 @@ async def verify_otp(data: OTPVerify):
         "message": f"Login successfully",
         "userRole": data.get("userRole",""),
         "data": data,
-        "id": str(result.inserted_id)
+        "id": str(data["_id"]) if data else str(result.inserted_id),
     }
