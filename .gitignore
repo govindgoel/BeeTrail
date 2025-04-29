@@ -1,0 +1,18 @@
+# created by virtualenv automatically
+lib/
+bin/
+include/
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+# C extensions
+*.so
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+eggs/
+.eggs/
+lib64/
+pyenv.cfg
+CACHEDIR.tag
