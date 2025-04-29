@@ -55,21 +55,15 @@ class BecknFarmerResponse(BaseModel):
 
 #MatchmakingRequest Models
 class MatchmakingRequest(BaseModel):
-    farmer_id: str
-    required_species: Optional[List[str]] = []
+    farm_id: str
+    beekeeper_id: str
     pollination_window_start: datetime
     pollination_window_end: datetime
-    crops: List[str]
-    land_area_acres: float
-    gps: str
 
 class MatchmakingResponse(BaseModel):
     id: str
-    farmer_id: str
-    crops: List[str]
-    required_species: List[str]
-    land_area_acres: float
-    gps: str
+    farm_id: str
+    beekeeper_id: str
     pollination_window_start: datetime
     pollination_window_end: datetime
     created_at: datetime

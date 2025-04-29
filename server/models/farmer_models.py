@@ -1,4 +1,4 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from typing import List, Optional
 
 class FarmerAccountCreate(BaseModel):
@@ -27,10 +27,14 @@ class CropLocation(BaseModel):
     flowering_stage: Optional[str] = None  # Optional flowering stage
     address: Optional[FarmAddress] = None  # Optional address for the location
 
+class Location(BaseModel):
+    latitude: float = Field(..., description="Latitude of the location")
+    longitude: float = Field(..., description="Longitude of the location")
+
 class FarmCreate(BaseModel):
     farmer_id: str # ID of the farmer
     name: str
-    location: str
+    location: Location
     fulladdress: str
     state: str
     district: str

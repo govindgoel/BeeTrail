@@ -17,6 +17,13 @@ async def create_matchmaking_request(data: MatchmakingRequest):
 
     return MatchmakingResponse(id=request_id, **request_doc)
 
+def serialize_req(request: dict) -> dict:
+    request["_id"] = str(request["_id"])
+    if "farmer_id" in request and isinstance(request["farmer_id"], ObjectId):
+        request["farmer_id"] = str(request["farmer_id"])
+    return request
+
+
 @matchmaking_router.get("/requests/{farmer_id}", response_model=List[MatchmakingResponse])
 async def get_farmer_matchmaking_requests(farmer_id: str):
     requests = await matchmaking_collection.find({"farmer_id": farmer_id}).to_list(length=None)
@@ -24,17 +31,18 @@ async def get_farmer_matchmaking_requests(farmer_id: str):
     if not requests:
         raise HTTPException(status_code=404, detail="No matchmaking requests found for this farmer")
 
-    return [
-        MatchmakingResponse(
-            id=str(req["_id"]),
-            farmer_id=req["farmer_id"],
-            crops=req["crops"],
-            required_species=req.get("required_species", []),
-            land_area_acres=req["land_area_acres"],
-            gps=req["gps"],
-            pollination_window_start=req["pollination_window_start"],
-            pollination_window_end=req["pollination_window_end"],
-            created_at=req["created_at"]
-        )
-        for req in requests
-    ]
+    serialize_requests = [serialize_req(req) for req in requests]
+
+    return serialize_requests
+
+
+@matchmaking_router.get("/requests/{beekeeper_id}", response_model=List[MatchmakingResponse])
+async def get_beekeeper_matchmaking_requests(beekeeper_id: str):
+    requests = await matchmaking_collection.find({"beekeeper_id": beekeeper_id}).to_list(length=None)
+
+    if not requests:
+        raise HTTPException(status_code=404, detail="No matchmaking requests found for this beekeeper")
+
+    serialize_requests = [serialize_req(req) for req in requests]
+
+    return serialize_requests

@@ -11,24 +11,24 @@ farmer_router = APIRouter()
 
 ##### FARMER ROUTES ######
 
-@farmer_router.post("/register-farmer")
-async def register_farmer_account(data: FarmerAccountCreate):
-    farmer_doc = {
-        "full_name": data.full_name,
-        "gender": data.gender,
-        "location": data.location,
-        "created_at": datetime.utcnow()
-    }
+# @farmer_router.post("/register-farmer")
+# async def register_farmer_account(data: FarmerAccountCreate):
+#     farmer_doc = {
+#         "full_name": data.full_name,
+#         "gender": data.gender,
+#         "location": data.location,
+#         "created_at": datetime.utcnow()
+#     }
 
-    result = await farmer_collection.insert_one(farmer_doc)
-    farmer_id = str(result.inserted_id)
+#     result = await farmer_collection.insert_one(farmer_doc)
+#     farmer_id = str(result.inserted_id)
 
-    return {
-        "id": f"{farmer_id}",
-        "full_name": data.full_name,
-        "gender": data.gender,
-        "gps": data.gps
-    }
+#     return {
+#         "id": f"{farmer_id}",
+#         "full_name": data.full_name,
+#         "gender": data.gender,
+#         "gps": data.gps
+#     }
 
 def store_photo(photo_base64: str, farmer_id: str):
     directory = f"photos/{farmer_id}/"
@@ -119,6 +119,20 @@ async def get_farms(beekeeper_id: str):
 
     if not farms:
         raise HTTPException(status_code=404, detail="No farms found for this beekeeper")
+
+    serialized_farms = [serialize_farm(farm) for farm in farms]
+
+    return {"farms": serialized_farms}
+
+@farmer_router.get("/farms/{farmer_id}")
+async def get_farmer_farms(farmer_id: str):
+    if not ObjectId.is_valid(farmer_id):
+        raise HTTPException(status_code=400, detail="Invalid farmer ID")
+
+    farms = await farms_collection.find({"farmer_id": farmer_id}).to_list(length=None)
+
+    if not farms:
+        raise HTTPException(status_code=404, detail="No farms found for this farmer")
 
     serialized_farms = [serialize_farm(farm) for farm in farms]
 

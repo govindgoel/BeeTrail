@@ -5,7 +5,7 @@ from datetime import datetime
 from routes.beekeeper_routes import beekeeper_router
 from routes.farmer_routes import farmer_router
 from routes.rating_routes import rating_router
-from routes.quote_routes import quote_router
+# from routes.quote_routes import quote_router
 from routes.order_routes import order_router
 from routes.matchmaking_routes import matchmaking_router
 from routes.otp_routes import otp_router
@@ -37,7 +37,7 @@ app.add_middleware(
 app.include_router(beekeeper_router, prefix="/beekeeper", tags=["Beekeepers"])
 app.include_router(farmer_router, prefix="/farmer", tags=["Farmers"])
 app.include_router(rating_router, prefix="/rating", tags=["Ratings"])
-app.include_router(quote_router, prefix="/quote", tags=["Quotes"])
+# app.include_router(quote_router, prefix="/quote", tags=["Quotes"])
 app.include_router(order_router, prefix="/order", tags=["Orders"])
 app.include_router(matchmaking_router, prefix="/matchmaking", tags=["Matchmaking"])
 app.include_router(otp_router, prefix="/otp", tags=["OTP"])
