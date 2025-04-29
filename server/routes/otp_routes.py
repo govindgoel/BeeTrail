@@ -82,10 +82,10 @@ async def verify_otp(data: OTPVerify):
     # In case user_data is still None (shouldn't happen, but good to check)
     if not user_data:
         raise HTTPException(status_code=500, detail="Failed to retrieve or create user")
-
+    print(user_data["_id"])
     return {
         "message": "Login successfully",
         "userRole": user_data.get("userRole", ""),
         "data": serialize_mongo_doc(user_data),
-        "id": str(user_data["_id"])
+        # "id": str(user_data["_id"]) 
     }
