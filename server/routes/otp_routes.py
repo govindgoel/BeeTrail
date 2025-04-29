@@ -31,6 +31,14 @@ async def send_otp(data: OTPRequest):
     return {"message": "OTP sent successfully"}
 
 
+# Helper to serialize MongoDB documents
+def serialize_mongo_doc(doc):
+    if not doc:
+        return None
+    doc["id"] = str(doc["_id"])
+    del doc["_id"]
+    return doc
+
 @otp_router.post("/verify-otp")
 async def verify_otp(data: OTPVerify):
     otp_doc = await otp_collection.find_one({"mobileNumber": data.mobileNumber})
@@ -49,24 +57,27 @@ async def verify_otp(data: OTPVerify):
         "created_at": datetime.utcnow()
     }
 
+    user_data = None
+
     if data.userRole == "farmer":
-        #check if the user already exists
-        data = await farmer_collection.find_one({"mobileNumber": data.mobileNumber})
-        if not data:
+        user_data = await farmer_collection.find_one({"mobileNumber": data.mobileNumber})
+        if not user_data:
             result = await farmer_collection.insert_one(user_doc)
+            user_data = user_doc or {"_id": result.inserted_id}
             await otp_collection.delete_one({"mobileNumber": data.mobileNumber})
+
     elif data.userRole == "beekeeper":
-        data = await beekeeper_collection.find_one({"mobileNumber": data.mobileNumber})
-        if not data:
+        user_data = await beekeeper_collection.find_one({"mobileNumber": data.mobileNumber})
+        if not user_data:
             result = await beekeeper_collection.insert_one(user_doc)
+            user_data = user_doc or {"_id": result.inserted_id}
             await otp_collection.delete_one({"mobileNumber": data.mobileNumber})
     else:
         raise HTTPException(status_code=400, detail="Invalid user role")
 
-
     return {
-        "message": f"Login successfully",
-        "userRole": data.get("userRole",""),
-        "data": data,
-        "id": str(data["_id"]) if data else str(result.inserted_id),
+        "message": "Login successfully",
+        "userRole": user_data.get("userRole", ""),
+        "data": serialize_mongo_doc(user_data),
+        "id": str(user_data["_id"])
     }
