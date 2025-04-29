@@ -11,20 +11,27 @@ class Address(BaseModel):
     country: str
     area_code: str
 
-class Location(BaseModel):
-    id: str
-    gps: str
-    address: Address
 
 class Descriptor(BaseModel):
     name: str
 
+class Location(BaseModel):
+    latitude: float = Field(..., description="Latitude of the location")
+    longitude: float = Field(..., description="Longitude of the location")
+
 class BeekeeperCreate(BaseModel):
+    beekeeper_id: str
     name: str
-    gps: str
-    address: Address
-    species: List[str]
-    certifications: List[str] = []
+    userRole: str = Field(default="beekeeper")
+    fulladdress: str
+    location: Location
+    state: str
+    district: str
+    numberOfHivesWithBroodOnly: int
+    numberOfHivesWithBroodAndSuper: int
+    frameCountPerChamber: int
+    typeOfBees: str
+    preferredLanguage: str
 
 class BecknProviderResponse(BaseModel):
     id: str
@@ -39,13 +46,6 @@ class FarmerAddress(BaseModel):
     state: str
     country: str
     area_code: str
-
-class FarmerCreate(BaseModel):
-    name: str
-    gps: str
-    address: FarmerAddress
-    crops: List[str] = []
-    land_area_acres: Optional[float] = 0.0
 
 class BecknFarmerResponse(BaseModel):
     id: str

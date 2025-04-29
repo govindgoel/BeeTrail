@@ -8,6 +8,7 @@ from routes.rating_routes import rating_router
 from routes.quote_routes import quote_router
 from routes.order_routes import order_router
 from routes.matchmaking_routes import matchmaking_router
+from routes.otp_routes import otp_router
 
 # from routes.route_planner_routes import route_planner_router
 
@@ -39,6 +40,7 @@ app.include_router(rating_router, prefix="/rating", tags=["Ratings"])
 app.include_router(quote_router, prefix="/quote", tags=["Quotes"])
 app.include_router(order_router, prefix="/order", tags=["Orders"])
 app.include_router(matchmaking_router, prefix="/matchmaking", tags=["Matchmaking"])
+app.include_router(otp_router, prefix="/otp", tags=["OTP"])
 # app.include_router(route_planner_router, prefix="/route-planner", tags=["Route Planner"])
 
 

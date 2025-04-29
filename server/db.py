@@ -19,3 +19,5 @@ quote_collection = db["quotes"]
 order_collection = db["orders"]
 
 rating_collection = db["ratings"]
+
+otp_collection = db["otp"]

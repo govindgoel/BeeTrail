@@ -30,18 +30,19 @@ class CropLocation(BaseModel):
 class FarmCreate(BaseModel):
     farmer_id: str # ID of the farmer
     name: str
-    gps: Optional[str] = None
-    address: Optional[FarmAddress] = None
-    crops: List[str] = []
-    bee_box_capacity: Optional[int] = 0
-    nectar_rich: Optional[bool] = False
+    location: str
+    fulladdress: str
+    state: str
+    district: str
+    total_beebox: Optional[int] = 0
     blooming_crops: List[str] = []
     blooming_start_date: Optional[str] = None  # Format: YYYY-MM-DD
     farming_method: Optional[str] = None
-    farm_photos: List[str] = []  # URLs or paths to photos
-    land_area_acres: Optional[float] = 0.0
-    locations: List[CropLocation] = []  # List of locations with flowering stages
+    farm_photos: List[str] = []  
+    farm_size: Optional[float] = 0.0
     bee_box_capacity_utilised: Optional[int] = 0
+    organic: Optional[bool] = False
+    preferredLanguage: Optional[str] = None
     created_at : Optional[str] = None  # Optional field for created_at timestamp
     updated_at : Optional[str] = None  # Optional field for updated_at timestamp
 
