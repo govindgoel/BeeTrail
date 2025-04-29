@@ -36,7 +36,7 @@ async def get_farmer_matchmaking_requests(farmer_id: str):
     return serialize_requests
 
 
-@matchmaking_router.get("/requests/beekeeper/{beekeeper_id}", response_model=List[MatchmakingResponse])
+@matchmaking_router.get("/requests/beekeeper/{beekeeper_id}")
 async def get_beekeeper_matchmaking_requests(beekeeper_id: str):
     requests = await matchmaking_collection.find({"beekeeper_id": beekeeper_id}).to_list(length=None)
 
