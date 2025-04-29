@@ -66,7 +66,7 @@ async def discover_protocol():
 
 @app.get("/contracts/{filename}")
 def get_contract_pdf(filename: str):
-    base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "contracts"))
+    base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "contracts"))
     file_path = os.path.join(base_dir, filename)
 
     if not os.path.isfile(file_path):
