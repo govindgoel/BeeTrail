@@ -1,5 +1,9 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
+from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import FileResponse
+
+import os
 from datetime import datetime
 
 from routes.beekeeper_routes import beekeeper_router
@@ -44,6 +48,7 @@ app.include_router(otp_router, prefix="/otp", tags=["OTP"])
 # app.include_router(route_planner_router, prefix="/route-planner", tags=["Route Planner"])
 
 
+
 @app.get("/")
 async def root():
     return {"message": "Welcome to the Bee-Pollination Beckn API Wrapper!"}
@@ -58,6 +63,20 @@ async def discover_protocol():
         ],
         "timestamp": datetime.utcnow().isoformat() + "Z"
     }
+
+@app.get("/contracts/{filename}")
+def get_contract_pdf(filename: str):
+    base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "contracts"))
+    file_path = os.path.join(base_dir, filename)
+
+    if not os.path.isfile(file_path):
+        raise HTTPException(status_code=404, detail="Contract PDF not found")
+
+    return FileResponse(
+        file_path,
+        media_type="application/pdf",
+        headers={"Content-Disposition": f'inline; filename="{filename}"'}
+    )
 
 
 # Run the server using uvicorn when the script is executed directly

@@ -58,12 +58,12 @@ class MatchmakingRequest(BaseModel):
     farm_id: str
     beekeeper_id: str
     pollination_window_start: datetime
-    pollination_window_end: datetime
+    bee_box_count: int
+    is_active : bool = True
 
 class MatchmakingResponse(BaseModel):
     id: str
     farm_id: str
     beekeeper_id: str
     pollination_window_start: datetime
-    pollination_window_end: datetime
     created_at: datetime

@@ -16,3 +16,4 @@ eggs/
 lib64/
 pyenv.cfg
 CACHEDIR.tag
+contracts/

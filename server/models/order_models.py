@@ -1,34 +1,30 @@
 from pydantic import BaseModel, Field
 from typing import List, Optional
-from datetime import datetime
+from datetime import datetime, timedelta, date
 
 class Price(BaseModel):
+    currency: str
     value: str
 
-class Payment(BaseModel):
-    status: str
-    collected_by: str
-
-class Quote(BaseModel):
+class BreakupItem(BaseModel):
+    title: str
     price: Price
 
-class Item(BaseModel):
-    id: str  # Service ID
-
-class Provider(BaseModel):
-    id: str  # Beekeeper ID
-
-class Fulfillment(BaseModel):
-    id: str  # Fulfillment ID
-
 class OrderRequest(BaseModel):
-    provider: Provider
-    items: List[Item]
-    fulfillment: Fulfillment
-    quote: Quote
-    payment: Payment
-    state: str
+    matchmaking_id: str
+    is_accepted: bool = False
+    breakup: Optional[List[BreakupItem]] = None
+    price: Price
+    ttl: datetime
+    created_at: datetime = Field(default_factory=datetime.now())
+    payment_method: str = "online"  # Default to "online", can be "cash" or "online"
+    payment_status: str = "pending"  # Default to "pending", can be "paid" or "pending"
+    order_state: str = "pending"  # Default to "pending", can be "accepted" or "rejected"
+    payment_link: Optional[str] = None  # Only required for online payments
+    contract_pdf_url: Optional[str] = None  # Path to contract PDF
 
 class OrderResponse(OrderRequest):
     id: str
     created_at: datetime
+    payment_link: Optional[str] = None  # Only required for online payments
+    contract_pdf_url: Optional[str] = None  # Path to contract PDF
