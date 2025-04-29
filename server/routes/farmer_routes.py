@@ -67,13 +67,13 @@ async def register_farmer(data: FarmCreate):
     }
     
     #sync name and location to farmer collection
-    
+
     await farmer_collection.update_one(
         {"_id": ObjectId(data.farmer_id)},
         {
             "$set": {
                 "name": data.name,
-                "location": data.location,
+                "location": data.location.dict(),
                 "updated_at": datetime.utcnow()
             }
         }
