@@ -24,7 +24,7 @@ def serialize_req(request: dict) -> dict:
     return request
 
 
-@matchmaking_router.get("/requests/{farmer_id}", response_model=List[MatchmakingResponse])
+@matchmaking_router.get("/requests/farmer/{farmer_id}", response_model=List[MatchmakingResponse])
 async def get_farmer_matchmaking_requests(farmer_id: str):
     requests = await matchmaking_collection.find({"farmer_id": farmer_id}).to_list(length=None)
 
@@ -36,7 +36,7 @@ async def get_farmer_matchmaking_requests(farmer_id: str):
     return serialize_requests
 
 
-@matchmaking_router.get("/requests/{beekeeper_id}", response_model=List[MatchmakingResponse])
+@matchmaking_router.get("/requests/beekeeper/{beekeeper_id}", response_model=List[MatchmakingResponse])
 async def get_beekeeper_matchmaking_requests(beekeeper_id: str):
     requests = await matchmaking_collection.find({"beekeeper_id": beekeeper_id}).to_list(length=None)
 
