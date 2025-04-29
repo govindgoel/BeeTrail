@@ -65,7 +65,7 @@ async def verify_otp(data: OTPVerify):
 
 
     return {
-        "message": f"{data.userRole} created successfully",
+        "message": f"Login successfully",
         "userRole": data.userRole,
         "data": data,
         "id": str(result.inserted_id)
