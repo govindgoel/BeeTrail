@@ -40,6 +40,7 @@ def serialize_mongo_doc(doc):
     return doc
 
 @otp_router.post("/verify-otp")
+@otp_router.post("/verify-otp")
 async def verify_otp(data: OTPVerify):
     otp_doc = await otp_collection.find_one({"mobileNumber": data.mobileNumber})
     print(otp_doc, data)
@@ -63,17 +64,24 @@ async def verify_otp(data: OTPVerify):
         user_data = await farmer_collection.find_one({"mobileNumber": data.mobileNumber})
         if not user_data:
             result = await farmer_collection.insert_one(user_doc)
-            user_data = user_doc or {"_id": result.inserted_id}
+            user_data = user_doc.copy()
+            user_data["_id"] = result.inserted_id
             await otp_collection.delete_one({"mobileNumber": data.mobileNumber})
 
     elif data.userRole == "beekeeper":
         user_data = await beekeeper_collection.find_one({"mobileNumber": data.mobileNumber})
         if not user_data:
             result = await beekeeper_collection.insert_one(user_doc)
-            user_data = user_doc or {"_id": result.inserted_id}
+            user_data = user_doc.copy()
+            user_data["_id"] = result.inserted_id
             await otp_collection.delete_one({"mobileNumber": data.mobileNumber})
+
     else:
         raise HTTPException(status_code=400, detail="Invalid user role")
+
+    # In case user_data is still None (shouldn't happen, but good to check)
+    if not user_data:
+        raise HTTPException(status_code=500, detail="Failed to retrieve or create user")
 
     return {
         "message": "Login successfully",
