@@ -65,6 +65,15 @@ async def get_farmer_matchmaking_requests(farmer_id: str):
 async def get_beekeeper_matchmaking_requests(beekeeper_id: str):
     requests = await matchmaking_collection.find({"beekeeper_id": beekeeper_id}).to_list(length=None)
 
+    #populate farm details using farm_id
+    for req in requests:
+        farm = await farms_collection.find_one({"_id": ObjectId(req["farm_id"])})
+        if farm:
+            req["farm"] = farm
+        else:
+            req["farm"] = None
+    
+
     if not requests:
         raise HTTPException(status_code=404, detail="No matchmaking requests found for this beekeeper")
 
