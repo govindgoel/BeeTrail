@@ -15,7 +15,7 @@ class OrderRequest(BaseModel):
     is_accepted: bool = False
     breakup: Optional[List[BreakupItem]] = None
     price: Price
-    ttl: datetime
+    ttl: Optional[datetime] = None 
     payment_method: str = "online"  # Default to "online", can be "cash" or "online"
     payment_status: str = "pending"  # Default to "pending", can be "paid" or "pending"
     order_state: str = "pending"  # Default to "pending", can be "accepted" or "rejected"
