@@ -1,0 +1,36 @@
+{
+    "translation": {
+        "addMember": "सदस्य जोडा",
+        "areYouSureWantToRemove": "तुम्हाला खात्री आहे की तुम्ही काढू इच्छिता?",
+        "enterMemberMobileNumber": "सदस्याचे मोबाईल नंबर भरा",
+        "enterMemberName": "सदस्याचे नाव भरा",
+        "fromYourTeam": "तुमच्या टीम मधून ",
+        "getStarted": "सुरु करूया",
+        "inviteTeamMember": "तुमच्या टीम मध्ये सदास्यं आमंत्रित करा  ",
+        "memberFromTo": "{} ते {} पर्यंत सदस्य",
+        "memberSince": "पासून सदस्य",
+        "noPastMemberToShow": "दर्शविण्यासाठी कोणतेही मागील सदस्य नाहीत",
+        "pastMembers": "जुने  सदस्य",
+        "presentMembers": "वर्तमान सदस्य",
+        "reinvite": "पुन्हा आमंत्रित करा",
+        "remind": "आठवण करा",
+        "reminderMessage": "रिमाइंडर पाठवले आहे",
+        "reminderSent": "रिमाइंडर पाठवले!",
+        "remove": "काढून टाका",
+        "removeMember": "सदस्य काढा",
+        "requestSent": "विनंती पाठवली आहे",
+        "requestSentMessage": "तुमच्या टीममध्ये सामील होण्याची विनंती पाठवली गेली आहे   ",
+        "requestSentOn": "आमंत्रण पाठवले गेले",
+        "sendInvite": "आमंत्रण पाठवा ",
+        "sendReminder": "आठवण करा ",
+        "sendRequest": "पाठवलेल्या विनंत्या ",
+        "sentRequests": "विनंती पाठवा",
+        "teamMemberWhatsappMsg": "नमस्कार! कृपया माझ्याशी या ॲपवर (बीकाइंड- एम्पॉवरिंग बीकीपर्स) येथे सामील व्हा - https://play.google.com/store/apps/details?id=co.thehumblebee.beekind",
+        "toJoinYourTeam": "तुमच्या टीममध्ये सामील होण्यासाठी",
+        "toYourTeam": "तुमचा टीम कडे",
+        "viaWhatsApp": "व्हाट्सएप द्वारे",
+        "wouldYouLikeToReinvite": "तुम्ही पुन्हा आमंत्रित करू इच्छिता?",
+        "key":"Marathi"
+
+    }
+}

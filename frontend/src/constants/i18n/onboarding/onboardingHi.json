@@ -1,0 +1,37 @@
+{
+    "translation": {
+        "udyamita": "उद्यमिता",
+        "welcomeToUdyamita": "उद्यमिता में आपका स्वागत है ",
+        "selectLanguage": "अपनी भाषा चुनें",
+        "didntReceiveAnOtp": "ओ टी पी नहीं मिला?",
+        "resendNow": "दोबारा भेजें",
+        "continue": "जारी रखें",
+        "mobileNumberLabel": "अपना 10 अंकों का मोबाइल नंबर लिखें ",
+        "mobile": "मोबाइल नंबर",
+        "TnC1": "पंजीकरण करके, मुझे स्वीकार है- ",
+        "TnC2": "नियम एवं शर्तें",
+        "TnC3": "और",
+        "TnC4": "गोपनीयता नीति",
+        "validNumberToast": "कृपया एक मान्य मोबाइल नंबर लिखें ",
+        "getOtp": "ओ टी पी भेजें ",
+        "otpSentToNumber": "replaceNumber पर भेजा गया ओटीपी दर्ज करें",
+        "resendOtp": "replaceSeconds सेकंड में पुनः भेजें",
+        "changeNumber": "मोबाइल नंबर बदलें",
+        "confirmLanguage": "मेरी भाषा तय करें ",
+        "changeYourLanguage": "मेरी भाषा बदलें ",
+        "or": "या",
+        "verifyOtp": "ओ टी पी की पुष्टि करें",
+        "selectEnterprise": "अपना उद्यम चुनें",
+        "beekeeping": "मधुमक्खी पालन",
+        "otherEnterprise": "अन्य उद्यम",
+        "justAFewMoments": "बस कुछ क्षण, {नाम}",
+        "noInternetConnectivity": "इंटरनेट कनेक्टिविटी नहीं है",
+        "connectToInternetToContinue": "जारी रखने के लिए आपको इंटरनेट से कनेक्ट रहना होगा|",
+        "loggedOutSuccessfully": "आप सफलतापूर्वक लॉग आउट हो गए हैं|",
+        "preparingDashboard": "हम आपके लिए एक विशेष डैशबोर्ड तैयार कर रहे हैं!",
+        "updateTheApp":"Update the app",
+        "kindlyUpdate":"Kindly update the app to continue.",
+        "updateNow":"Update Now"
+    
+    }
+}

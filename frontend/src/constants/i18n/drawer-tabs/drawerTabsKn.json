@@ -1,0 +1,22 @@
+{
+    "translation": {
+        "myProfile": "ನನ್ನ ವಿವರ",
+        "myEnterprise": "ನನ್ನ ಎಂಟರ್‌ಪ್ರೈಸ್",
+        "language": "ಭಾಷೆ",
+        "myActivities": "ನನ್ನ ಚಟುವಟಿಕೆಗಳು",
+        "myCommunities": "ನನ್ನ ಸಮುದಾಯಗಳು",
+        "myOrders": "ನನ್ನ ಆರ್ಡರ್ಸ್",
+        "getSupport": "ಬೆಂಬಲ ಪಡೆಯಿರಿ",
+        "myTeam": "ನನ್ನ ತಂಡ",
+        "inviteBeekeeper": "ಜೇನುಸಾಕಣೆದಾರರನ್ನು ಆಹ್ವಾನಿಸಿ",
+        "logout": "ಲಾಗ್ ಔಟ್",
+        "doYouReallyWantToLogOut": "ನೀವು ನಿಜವಾಗಿಯೂ ಲಾಗ್ ಔಟ್ ಮಾಡಲು ಬಯಸುವಿರಾ? ಈ ಕ್ರಿಯೆಯು ಸರ್ವರ್‌ನೊಂದಿಗೆ ನಿಮ್ಮ ಎಲ್ಲಾ ಉಳಿಸದ ಡೇಟಾವನ್ನು ತೆರವುಗೊಳಿಸುತ್ತದೆ!",
+        "cancel": "ರದ್ದುಗೊಳಿಸಿ",
+        "changeProfilePhoto": "ಪ್ರೊಫೈಲ್ ಫೋಟೋವನ್ನು ಬದಲಾಯಿಸಿ",
+        "chooseFromLibrary": "ಲೈಬ್ರರಿಯಿಂದ ಆರಿಸಿ",
+        "takePhoto": "ಫೋಟೋ ತೆಗೆದುಕೊಳ್ಳಿ",
+        "removeCurrentPhoto": "ಪ್ರಸ್ತುತ ಫೋಟೋವನ್ನು ತೆಗೆದುಹಾಕಿ",
+        "discoverProducts": "ಉತ್ಪನ್ನಗಳನ್ನು ಅನ್ವೇಷಿಸಿ",
+        "appVersion": "ಅಪ್ಲಿಕೇಶನ್ ಆವೃತ್ತಿ"
+    }
+}

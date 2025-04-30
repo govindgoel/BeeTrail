@@ -1,0 +1,22 @@
+{
+    "translation": {
+        "myProfile": "माझे प्रोफाइल",
+        "myEnterprise": "माझा उपक्रम",
+        "language": "भाषा ",
+        "myActivities": "माझे क्रियाकलाप",
+        "myCommunities": "माझे ग्रुप्स",
+        "myOrders": "माझे आर्डर ",
+        "getSupport": "सहाय्य घ्या",
+        "myTeam": "माझी टीम",
+        "inviteBeekeeper": "सहकारी मधुमाशी पालकांना आमंत्रित करा",
+        "logout": "लॉग आउट",
+        "doYouReallyWantToLogOut": "तुम्हाला नक्की लॉग आउट करायचे आहे का? ही क्रिया सर्व्हर मधील  तुमचा सर्व जतन न केलेला डेटा साफ करेल!",
+        "cancel": "रद्द करा",
+        "changeProfilePhoto": "प्रोफाइल फोटो बदला",
+        "chooseFromLibrary": "लायब्ररीमधून निवडा",
+        "takePhoto": "फोटो घ्या",
+        "removeCurrentPhoto": "वर्तमान फोटो काढा",
+        "discoverProducts": "प्रोडक्ट शोधा",
+        "appVersion": "ॲप आवृत्ती"
+    }
+}

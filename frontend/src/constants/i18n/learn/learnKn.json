@@ -1,0 +1,23 @@
+{
+  "translation": {
+    "noCancel": "ಇಲ್ಲ, ರದ್ದುಮಾಡಿ",
+    "noContentFound": "ಯಾವುದೇ ವಿಷಯ ಕಂಡುಬಂದಿಲ್ಲ",
+    "replyCommentDeleted": "ಪ್ರತ್ಯುತ್ತರ ಪ್ರತಿಕ್ರಿಯೆಯನ್ನು ಅಳಿಸಲಾಗಿದೆ",
+    "save": "ಉಳಿಸಿ",
+    "saved": "ಉಳಿಸಲಾದ",
+    "searchforaVideo": "ವೀಡಿಯೊವನ್ನು ಹುಡುಕಿ",
+    "seeLess": "ಕಡಿಮೆ ನೋಡಿ",
+    "seeMore": "ಇನ್ನಷ್ಟು ನೋಡಿ",
+    "thisAreaIsContentFreeAtTheMoment": "ಈ ಪ್ರದೇಶವು ಈ ಸಮಯದಲ್ಲಿ ವಿಷಯ-ಮುಕ್ತವಾಗಿದೆ.",
+    "view": "ವೀಕ್ಷಣೆ",
+    "viewAllVideos": "ಎಲ್ಲಾ ವೀಡಿಯೊಗಳನ್ನು ವೀಕ್ಷಿಸಿ",
+    "views": "ವೀಕ್ಷಣೆಗಳು",
+    "watchVideo": "ವೀಡಿಯೊ ವೀಕ್ಷಿಸಿ",
+    "watched": "ವೀಕ್ಷಿಸಿದ",
+    "yesProceed": "ಹೌದು, ಮುಂದುವರೆಯಿರಿ",
+    "youLikedThisVideo": "ನೀವು ಈ ವೀಡಿಯೊವನ್ನು ಇಷ್ಟಪಟ್ಟಿದ್ದೀರಿ",
+    "youSavedThisVideo": "ನೀವು ಈ ವೀಡಿಯೊವನ್ನು ಉಳಿಸಿದ್ದೀರಿ",
+    "youUnlikedThisVideo": "ನೀವು ಈ ವೀಡಿಯೊವನ್ನು ಅನ್‌ಲೈಕ್ ಮಾಡಿರುವಿರಿ",
+    "youUnsavedThisVideo": "ನೀವು ಈ ವೀಡಿಯೊವನ್ನು ಉಳಿಸಿಲ್ಲ"
+  }
+}

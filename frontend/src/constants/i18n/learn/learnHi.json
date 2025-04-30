@@ -1,0 +1,23 @@
+{
+  "translation": {
+    "noCancel": "नहीं, रद्द करें",
+    "noContentFound": "कुछ नहीं मिला",
+    "replyCommentDeleted": "उत्तर टिप्पणी हटा दी गई",
+    "save": "सेव करें",
+    "saved": "सेव किया हुआ",
+    "searchforaVideo": "वीडियो खोजें",
+    "seeLess": "कम देखें",
+    "seeMore": "और देखें",
+    "thisAreaIsContentFreeAtTheMoment": "फिलहाल कोई वीडियो मौजूद नहीं है",
+    "view": "देखें",
+    "viewAllVideos": "सभी वीडियो देखें",
+    "views": "बार देखा गया",
+    "watchVideo": "वीडियो देखें",
+    "watched": "देखा हुआ",
+    "yesProceed": "हाँ, आगे बढ़ें",
+    "youLikedThisVideo": "आपने यह वीडियो लाइक किया",
+    "youSavedThisVideo": "आपने इस वीडियो को सेव किया",
+    "youUnlikedThisVideo": "आपने इस वीडियो का लाइक हटाया",
+    "youUnsavedThisVideo": "आपने इस वीडियो को सेव की हुयी सूचि से हटा दिया"
+  }
+}

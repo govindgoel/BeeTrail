@@ -1,0 +1,20 @@
+{
+  "translation": {
+    "actionNeeded": "Action Needed!",
+    "allHives": "All Hives",
+    "changeAddApiary": "Change/Add Apiary",
+    "completeYourInspectionsNow": "Complete your inspections now",
+    "confirmationToContinue": "Are you sure you are near your Hive to continue the Inspection?",
+    "deleteConfirmationOfHive": "Are you sure you want to delete the data of this incomplete Inspection?",
+    "goodDecision": "Good Decision!",
+    "hive": "Hive",
+    "inspectHive": "Inspect hive",
+    "inspectedOn": "Inspected on",
+    "noInspectionsToshow": "No inspections to show",
+    "pastInspections": "Past Inspections",
+    "proceedWithAllHives": "Proceed with All Hives",
+    "resumeNow": "Resume now",
+    "selectHive": "Select Hive",
+    "selectHives": "Select Hives"
+  }
+}

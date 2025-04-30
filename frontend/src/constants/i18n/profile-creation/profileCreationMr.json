@@ -1,0 +1,20 @@
+{
+    "translation": {
+        "createYourAccount": "तुमचे अकाउंट बनवा",
+        "enterYourFullName": "तुमचे पूर्ण नाव भरा",
+        "selectYourGender": "तुमचे लिंग निवडा",
+        "male": "पुरुष",
+        "female": "महिला",
+        "runningBusinessSince": "कधी पासून उपक्रम चालू आहे",
+        "selectYear": "वर्ष निवडा",
+        "selectYourState": "तुमचे राज्य निवडा",
+        "selectYourDistrict": "तुमचा जिल्हा निवडा",
+        "optional": "पर्यायी",
+        "completeRegistration": "तुमची नोंदणी पूर्ण करा",
+        "pincode": "पिन कोड",
+        "saveProfile": "तुमचे प्रोफाइल सेव्ह करा",
+        "editProfile": "तुमचे प्रोफाइल संपादित करा",
+        "answeronitsway":"कृपया थांबा.  तुमचे उत्तर लवकरच येईल!"
+
+    }
+}

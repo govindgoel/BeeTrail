@@ -1,0 +1,22 @@
+{
+    "translation": {
+        "myProfile": "मेरी प्रोफाइल",
+        "myEnterprise": "मेरा उद्यम",
+        "language": "भाषा ",
+        "myActivities": "मेरी गतिविधियां",
+        "myCommunities": "मेरे समुदाय",
+        "myOrders": "मेरे आर्डर ",
+        "getSupport": "समर्थन पाएं",
+        "myTeam": "मेरी टीम",
+        "inviteBeekeeper": "साथी मधुमक्खी पालकों को जोड़ें",
+        "logout": "लॉग आउट",
+        "doYouReallyWantToLogOut": "क्या आप सचमुच लॉग आउट करना चाहते हैं? यह क्रिया सर्वर से आपके सभी सहेजे न गए डेटा को साफ़ कर देगी!",
+        "cancel": "रद्द करें ",
+        "changeProfilePhoto": "प्रोफ़ाइल फ़ोटो बदलें",
+        "chooseFromLibrary": "फ़ोन गैलरी से चुनें",
+        "takePhoto": "फोटो लें ",
+        "removeCurrentPhoto": "वर्तमान तस्वीर हटाएं ",
+        "discoverProducts": "प्रोडक्ट खोजें",
+        "appVersion": "ऐप संस्करण"
+    }
+}

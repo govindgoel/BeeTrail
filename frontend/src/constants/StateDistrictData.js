@@ -1,0 +1,223 @@
+import state_district_map from './Districts';
+
+export const IndianStates = [
+  {
+    country: 'India',
+    inFocusRegion: false,
+    _id: '5dce8d42ecd44f1980cefde9',
+    name: 'Andaman and Nicobar Islands',
+  },
+  {
+    country: 'India',
+    inFocusRegion: false,
+    _id: '5dce8d42ecd44f1980cefdea',
+    name: 'Andhra Pradesh',
+  },
+  {
+    country: 'India',
+    inFocusRegion: false,
+    _id: '5dce8d42ecd44f1980cefdeb',
+    name: 'Arunachal Pradesh',
+  },
+  {
+    country: 'India',
+    inFocusRegion: false,
+    _id: '5dce8d42ecd44f1980cefdec',
+    name: 'Assam',
+  },
+  {
+    country: 'India',
+    inFocusRegion: true,
+    _id: '5dce8d42ecd44f1980cefde6',
+    name: 'Bihar',
+  },
+  {
+    country: 'India',
+    inFocusRegion: false,
+    _id: '5dce8d42ecd44f1980cefded',
+    name: 'Chandigarh',
+  },
+  {
+    country: 'India',
+    inFocusRegion: false,
+    _id: '5dce8d42ecd44f1980cefdee',
+    name: 'Chhattisgarh',
+  },
+  {
+    country: 'India',
+    inFocusRegion: false,
+    _id: '5dce8d42ecd44f1980cefdef',
+    name: 'Dadra and Nagar Haveli',
+  },
+  {
+    country: 'India',
+    inFocusRegion: false,
+    _id: '5dce8d42ecd44f1980cefdf0',
+    name: 'Daman and Diu',
+  },
+  {
+    country: 'India',
+    inFocusRegion: false,
+    _id: '5dce8d42ecd44f1980cefdf1',
+    name: 'Delhi',
+  },
+  {
+    country: 'India',
+    inFocusRegion: false,
+    _id: '5dce8d42ecd44f1980cefdf2',
+    name: 'Goa',
+  },
+  {
+    country: 'India',
+    inFocusRegion: false,
+    _id: '5dce8d42ecd44f1980cefdf3',
+    name: 'Gujarat',
+  },
+  {
+    country: 'India',
+    inFocusRegion: false,
+    _id: '5dce8d42ecd44f1980cefdf4',
+    name: 'Haryana',
+  },
+  {
+    country: 'India',
+    inFocusRegion: false,
+    _id: '5dce8d42ecd44f1980cefdf5',
+    name: 'Himachal Pradesh',
+  },
+  {
+    country: 'India',
+    inFocusRegion: false,
+    _id: '5dce8d42ecd44f1980cefdf6',
+    name: 'Jammu and Kashmir',
+  },
+  {
+    country: 'India',
+    inFocusRegion: true,
+    _id: '5dce8d42ecd44f1980cefde4',
+    name: 'Jharkhand',
+  },
+  {
+    country: 'India',
+    inFocusRegion: false,
+    _id: '5dce8d42ecd44f1980cefdf7',
+    name: 'Karnataka',
+  },
+  {
+    country: 'India',
+    inFocusRegion: false,
+    _id: '5dce8d42ecd44f1980cefdf8',
+    name: 'Kerala',
+  },
+  {
+    country: 'India',
+    inFocusRegion: false,
+    _id: '5dce8d42ecd44f1980cefdf9',
+    name: 'Lakshadweep',
+  },
+  {
+    country: 'India',
+    inFocusRegion: false,
+    _id: '5dce8d42ecd44f1980cefdfa',
+    name: 'Madhya Pradesh',
+  },
+  {
+    country: 'India',
+    inFocusRegion: true,
+    _id: '5dce8d42ecd44f1980cefdfb',
+    name: 'Maharashtra',
+  },
+  {
+    country: 'India',
+    inFocusRegion: false,
+    _id: '5dce8d42ecd44f1980cefdfc',
+    name: 'Manipur',
+  },
+  {
+    country: 'India',
+    inFocusRegion: false,
+    _id: '5dce8d42ecd44f1980cefdfd',
+    name: 'Meghalaya',
+  },
+  {
+    country: 'India',
+    inFocusRegion: false,
+    _id: '5dce8d42ecd44f1980cefdfe',
+    name: 'Mizoram',
+  },
+  {
+    country: 'India',
+    inFocusRegion: false,
+    _id: '5dce8d42ecd44f1980cefdff',
+    name: 'Nagaland',
+  },
+  {
+    country: 'India',
+    inFocusRegion: true,
+    _id: '5dce8d42ecd44f1980cefde7',
+    name: 'Odisha',
+  },
+  {
+    country: 'India',
+    inFocusRegion: false,
+    _id: '5dce8d42ecd44f1980cefe00',
+    name: 'Pondicherry',
+  },
+  {
+    country: 'India',
+    inFocusRegion: false,
+    _id: '5dce8d42ecd44f1980cefe01',
+    name: 'Punjab',
+  },
+  {
+    country: 'India',
+    inFocusRegion: false,
+    _id: '5dce8d42ecd44f1980cefe02',
+    name: 'Rajasthan',
+  },
+  {
+    country: 'India',
+    inFocusRegion: false,
+    _id: '5dce8d42ecd44f1980cefe03',
+    name: 'Sikkim',
+  },
+  {
+    country: 'India',
+    inFocusRegion: false,
+    _id: '5dce8d42ecd44f1980cefe04',
+    name: 'Tamil Nadu',
+  },
+  {
+    country: 'India',
+    inFocusRegion: true,
+    _id: '5dce8d42ecd44f1980cefde5',
+    name: 'Telangana',
+  },
+  {
+    country: 'India',
+    inFocusRegion: false,
+    _id: '5dce8d42ecd44f1980cefe05',
+    name: 'Tripura',
+  },
+  {
+    country: 'India',
+    inFocusRegion: true,
+    _id: '5dce8d42ecd44f1980cefde8',
+    name: 'Uttar Pradesh',
+  },
+  {
+    country: 'India',
+    inFocusRegion: false,
+    _id: '5dce8d42ecd44f1980cefe06',
+    name: 'Uttarakhand',
+  },
+  {
+    country: 'India',
+    inFocusRegion: false,
+    _id: '5dce8d42ecd44f1980cefe07',
+    name: 'West Bengal',
+  },
+];
+
+export const fetchDistrictsByStateName = state =>
+  state_district_map[state] || [];

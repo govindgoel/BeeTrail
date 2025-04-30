@@ -1,0 +1,18 @@
+{
+    "translation": {
+        "createYourAccount": "ನಿಮ್ಮ ಖಾತೆಯನ್ನು ರಚಿಸಿ",
+        "enterYourFullName": "ನಿಮ್ಮ ಪೂರ್ಣ ಹೆಸರನ್ನು ನಮೂದಿಸಿ",
+        "selectYourGender": "ನಿಮ್ಮ ಲಿಂಗವನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+        "male": "ಪುರುಷ",
+        "female": "ಸ್ತ್ರೀ",
+        "runningBusinessSince": "ಎಂಟರ್‌ಪ್ರೈಸ್ ಅನ್ನು ಯಾವಾಗಿನಿಂದ ನಡೆಸಲಾಗುತ್ತಿದೆ",
+        "selectYear": "ವರ್ಷವನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+        "selectYourState": "ನಿಮ್ಮ ರಾಜ್ಯವನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+        "selectYourDistrict": "ನಿಮ್ಮ ಜಿಲ್ಲೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+        "optional": "ಐಚ್ಛಿಕ",
+        "completeRegistration": "ನೋಂದಣಿಯನ್ನು ಪೂರ್ಣಗೊಳಿಸಿ",
+        "pincode": "ಪಿನ್‌ಕೋಡ್",
+        "saveProfile": "ಪ್ರೊಫೈಲ್ ಉಳಿಸಿ",
+        "editProfile": "ಪ್ರೊಫೈಲ್ ಅನ್ನು ಎಡಿಟ್ ಮಾಡಿ"
+    }
+}

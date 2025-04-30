@@ -1,0 +1,10 @@
+{
+  "enabled": true,
+  "prefabPath": "/Users/dhruvaggarwal/.gradle/caches/modules-2/files-2.1/com.google.prefab/cli/2.1.0/aa32fec809c44fa531f01dcfb739b5b3304d3050/cli-2.1.0-all.jar",
+  "packages": [
+    "/Users/dhruvaggarwal/.gradle/caches/8.13/transforms/19d1edf149c74b27cc6c4d19cff84ff4/transformed/react-android-0.79.1-debug/prefab",
+    "/Users/dhruvaggarwal/Desktop/letsendorse/PragatiPrototype/node_modules/react-native-reanimated/android/build/intermediates/prefab_package/debug/prefab",
+    "/Users/dhruvaggarwal/.gradle/caches/8.13/transforms/33356f5d8c54bc90cf8c1d4813753431/transformed/hermes-android-0.79.1-debug/prefab",
+    "/Users/dhruvaggarwal/.gradle/caches/8.13/transforms/a91247b082e58ecda0e73b7f9d71864e/transformed/fbjni-0.7.0/prefab"
+  ]
+}

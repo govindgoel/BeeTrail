@@ -1,0 +1,31 @@
+{
+    "translation": {
+        "goToApiary": "मेरे एपियरी में चलें",
+        "namaste": "नमस्ते",
+        "community": "समुदाय ",
+        "home": "होम",
+        "learn": "सीखें ",
+        "loan": "लोन",
+        "expert": "विशेषज्ञ",
+        "eBazaar": "ई-बाजार",
+        "viewAll": "सारे देखें",
+        "myCommunity": "मेरे समुदाय",
+        "events": "कार्यशालाएं",
+        "posts": "पोस्ट ",
+        "adminPosts": "एडमिन के पोस्ट ",
+        "watchAndLearn": "देखें और जानें",
+        "recommended": "आपके लिए",
+        "latest": "नए",
+        "popular": "लोकप्रिय",
+        "liked": "आपके पसंदीदा",
+        "courses": "कोर्स ",
+        "continueWatching": "देखना जारी रखें",
+        "forYou": "आपके लिए",
+        "messages": "मैसेज ",
+        "knowMore": "अधिक जानिए ",
+        "resume": "जारी रखें",
+        "preparingYourApiaryForAction":"अपियरी क्रिया के लिए तैयार हो रही है।",
+        "iamheretosolveyourdoubt":"मैं यहाँ आपकी शंकाओं का समाधान करने के लिए हूँ।"
+
+    }
+}

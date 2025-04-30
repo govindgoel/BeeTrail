@@ -1,0 +1,18 @@
+{
+    "translation":{
+        "createYourAccount": "Create your account",
+        "enterYourFullName": "Enter your Full Name",
+        "selectYourGender": "Select your Gender",
+        "male": "Male",
+        "female": "Female",
+        "runningBusinessSince": "Running enterprise since",
+        "selectYear": "Select the year",
+        "selectYourState": "Select your state",
+        "selectYourDistrict": "Select your district",
+        "optional": "Optional",
+        "completeRegistration": "Complete your Registration",
+        "pincode": "Pincode",
+        "saveProfile": "Save your profile",
+        "editProfile": "Edit your profile"
+    }
+}

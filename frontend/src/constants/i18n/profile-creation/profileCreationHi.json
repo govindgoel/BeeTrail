@@ -1,0 +1,18 @@
+{
+    "translation": {
+        "createYourAccount": "अपना अकाउंट बनाएं",
+        "enterYourFullName": "अपना पूरा नाम भरें",
+        "selectYourGender": "अपना लिंग चुनें",
+        "male": "पुरुष",
+        "female": "महिला",
+        "runningBusinessSince": "आप कब से उद्यम चला रहे हैं",
+        "selectYear": "वर्ष चुनें",
+        "selectYourState": "अपना राज्य चुनें",
+        "selectYourDistrict": "अपना जिला चुनें",
+        "optional": "अनिवार्य नहीं",
+        "completeRegistration": "अपना पंजीकरण पूरा करें",
+        "pincode": "पिन कोड",
+        "saveProfile": "अपनी प्रोफ़ाइल सेव करें ",
+        "editProfile": "प्रोफ़ाइल में बदलाव करें"
+    }
+}

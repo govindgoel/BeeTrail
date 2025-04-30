@@ -1,0 +1,23 @@
+{
+  "translation": {
+    "noCancel": "No, Cancel",
+    "noContentFound": "No Content Found",
+    "replyCommentDeleted": "Reply Comment Deleted",
+    "save": "Save",
+    "saved": "Saved",
+    "searchforaVideo": "Search for a video",
+    "seeLess": "See less",
+    "seeMore": "See more",
+    "thisAreaIsContentFreeAtTheMoment": "This area is content-free at the moment.",
+    "view": "View",
+    "viewAllVideos": "View all videos",
+    "views": "Views",
+    "watchVideo": "Watch video",
+    "watched": "Watched",
+    "yesProceed": "Yes, Proceed",
+    "youLikedThisVideo": "You liked this video",
+    "youSavedThisVideo": "You saved this video",
+    "youUnlikedThisVideo": "You unliked this video",
+    "youUnsavedThisVideo": "You unsaved this video"
+  }
+}

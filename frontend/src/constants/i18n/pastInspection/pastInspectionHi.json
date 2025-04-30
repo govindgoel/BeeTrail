@@ -1,0 +1,20 @@
+{
+  "translation": {
+    "actionNeeded": "आपकी ओर से कार्यवाई आवश्यक है",
+    "allHives": "सभी हाइव",
+    "changeAddApiary": "एपियरी बदलें/जोड़ें",
+    "completeYourInspectionsNow": "अभी अपना निरीक्षण पूरा करें",
+    "confirmationToContinue": "क्या आप निरीक्षण जारी रखने के लिए अपने हाइव के पास हैं?",
+    "deleteConfirmationOfHive": "क्या आप वाकई इस अधूरे निरीक्षण का डाटा हटाना चाहते हैं?",
+    "goodDecision": "अच्छा निर्णय!",
+    "hive": "हाइव",
+    "inspectHive": "हाइव का निरीक्षण करें",
+    "inspectedOn": "को निरीक्षण किया गया",
+    "noInspectionsToshow": "कोई निरीक्षण नहीं",
+    "pastInspections": "पिछले निरीक्षण",
+    "proceedWithAllHives": "सभी हाइव के साथ आगे बढ़ें",
+    "resumeNow": "फिर से शुरू करें",
+    "selectHive": "हाइव का चयन करें",
+    "selectHives": "हाइव का चयन करें"
+  }
+}

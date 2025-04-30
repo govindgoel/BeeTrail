@@ -1,0 +1,1 @@
+export const dynamic_route_key_name = 'dynamic_redirect_link';

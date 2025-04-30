@@ -1,0 +1,20 @@
+{
+    "translation": {
+        "actionNeeded": "तुमच्या बाजूने कृती आवश्यक आहे",
+        "allHives": "सर्व हाइव",
+        "changeAddApiary": "एपियरी बदला/जोडा",
+        "completeYourInspectionsNow": "तुमची तपासणी आता पूर्ण कर",
+        "confirmationToContinue": "तपासणी सुरू ठेवण्यासाठी तुम्ही तुमच्या हाइवजवळ असल्याची खात्री आहे का?",
+        "deleteConfirmationOfHive": "तुमची खात्री आहे की तुम्ही या अपूर्ण तपासणीचा डेटा हटवू इच्छिता?",
+        "goodDecision": "चांगला निर्णय!",
+        "hive": "हाइव",
+        "inspectHive": "हाइवचे निरीक्षण करा",
+        "inspectedOn": "वर पाहणी केली",
+        "noInspectionsToshow": "दर्शविण्यासाठी कोणतीही तपासणी नाही",
+        "pastInspections": "मागील तपासणी",
+        "proceedWithAllHives": "सगळे हाइव निवडा ",
+        "resumeNow": "पुन्हा सुरू करा",
+        "selectHive": "हाइव निवडा ",
+        "selectHives": "हाइव निवडा "
+    }
+}

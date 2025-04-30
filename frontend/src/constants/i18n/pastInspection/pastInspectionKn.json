@@ -1,0 +1,20 @@
+{
+  "translation": {
+    "actionNeeded": "ಕ್ರಿಯೆಯ ಅಗತ್ಯವಿದೆ!",
+    "allHives": "ಎಲ್ಲಾ ಜೇನುಗೂಡುಗಳು",
+    "changeAddApiary": "ಏಪಿಯರಿ ಅನ್ನು ಬದಲಾಯಿಸಿ/ಸೇರಿಸಿ",
+    "completeYourInspectionsNow": "ನಿಮ್ಮ ತಪಾಸಣೆಯನ್ನು ಈಗಲೇ ಪೂರ್ಣಗೊಳಿಸಿ",
+    "confirmationToContinue": "ತಪಾಸಣೆಯನ್ನು ಮುಂದುವರಿಸಲು ನಿಮ್ಮ ಜೇನುಗೂಡಿನ ಸಮೀಪದಲ್ಲಿರುವಿರಿ ಎಂದು ನೀವು ಖಚಿತವಾಗಿ ಬಯಸುವಿರಾ?",
+    "deleteConfirmationOfHive": "ಈ ಅಪೂರ್ಣ ತಪಾಸಣೆಯ ಡೇಟಾವನ್ನು ಅಳಿಸಲು ನೀವು ಖಚಿತವಾಗಿ ಬಯಸುವಿರಾ?",
+    "goodDecision": "ಒಳ್ಳೆಯ ನಿರ್ಧಾರ!",
+    "hive": "ಜೇನುಗೂಡು",
+    "inspectHive": "ಜೇನುಗೂಡಿನ ಪರೀಕ್ಷಿಸಿ",
+    "inspectedOn": "ತಪಾಸಣೆಯ ದಿನಾಂಕ",
+    "noInspectionsToshow": "ತೋರಿಸಲು ಯಾವುದೇ ಪರಿಶೀಲನೆಗಳಿಲ್ಲ",
+    "pastInspections": "ಹಿಂದಿನ ತಪಾಸಣೆಗಳು",
+    "proceedWithAllHives": "ಎಲ್ಲಾ ಜೇನುಗೂಡುಗಳೊಂದಿಗೆ ಮುಂದುವರಿಯಿರಿ",
+    "resumeNow": "ಈಗ ಪುನರಾರಂಭಿಸಿ",
+    "selectHive": "ಹೈವ್ ಆಯ್ಕೆಮಾಡಿ",
+    "selectHives": "ಜೇನುಗೂಡುಗಳನ್ನು ಆಯ್ಕೆಮಾಡಿ"
+  }
+}

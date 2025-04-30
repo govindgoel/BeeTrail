@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "65860874338",
+    "project_id": "aipragati",
+    "storage_bucket": "aipragati.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:65860874338:android:0cf2679d37cf6f297f613b",
+        "android_client_info": {
+          "package_name": "com.pragatiprototype"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBThyHYb5wH1cHzkWKEOaXAXPPX4GPe1M4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

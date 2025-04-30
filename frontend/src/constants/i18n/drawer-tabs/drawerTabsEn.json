@@ -1,0 +1,22 @@
+{
+    "translation": {
+        "myProfile": "My profile",
+        "myEnterprise": "My Enterprise",
+        "language": "Language",
+        "myActivities": "My activities",
+        "myCommunities": "My Communities",
+        "myOrders": "My Orders",
+        "getSupport": "Get Support",
+        "myTeam": "My Team",
+        "inviteBeekeeper": "Invite fellow Beekeepers",
+        "logout": "Log out",
+        "doYouReallyWantToLogOut": "Do you really want to log out? This action would clear all your unsaved data with the server!",
+        "cancel": "Cancel",
+        "changeProfilePhoto": "Change profile photo",
+        "chooseFromLibrary": "Choose from library",
+        "takePhoto": "Take photo",
+        "removeCurrentPhoto": "Remove current photo",
+        "discoverProducts": "Discover Products",
+        "appVersion": "App Version"
+    }
+}
