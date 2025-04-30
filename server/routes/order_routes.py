@@ -169,6 +169,7 @@ async def create_order(data: OrderRequest):
         order_doc["payment_link"] = None  # For cash payment, no payment link
 
     order_doc["ttl"] = datetime.utcnow() + timedelta(days=2)  # Set TTL for 2 days
+    order_doc["created_at"] = datetime.utcnow()
     # Insert the order into the collection
     result = await order_collection.insert_one(order_doc)
     order_id = result.inserted_id

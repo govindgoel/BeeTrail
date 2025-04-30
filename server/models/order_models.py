@@ -16,7 +16,6 @@ class OrderRequest(BaseModel):
     breakup: Optional[List[BreakupItem]] = None
     price: Price
     ttl: datetime
-    created_at: datetime = Field(default_factory=datetime.now())
     payment_method: str = "online"  # Default to "online", can be "cash" or "online"
     payment_status: str = "pending"  # Default to "pending", can be "paid" or "pending"
     order_state: str = "pending"  # Default to "pending", can be "accepted" or "rejected"
