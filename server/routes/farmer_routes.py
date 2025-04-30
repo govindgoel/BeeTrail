@@ -111,7 +111,7 @@ def serialize_farm(farm: dict) -> dict:
         farm["beekeeper_id"] = str(farm["beekeeper_id"])
     return farm
 
-@farmer_router.get("/farms/{beekeeper_id}")
+@farmer_router.get("/farms/b/{beekeeper_id}")
 async def get_farms(beekeeper_id: str):
     if not ObjectId.is_valid(beekeeper_id):
         raise HTTPException(status_code=400, detail="Invalid beekeeper ID")
@@ -125,10 +125,12 @@ async def get_farms(beekeeper_id: str):
 
     return {"farms": serialized_farms}
 
-@farmer_router.get("/farms/{farmer_id}")
+@farmer_router.get("/farms/f/{farmer_id}")
 async def get_farmer_farms(farmer_id: str):
-    if not ObjectId.is_valid(farmer_id):
-        raise HTTPException(status_code=400, detail="Invalid farmer ID")
+    if not farmer_id or not isinstance(farmer_id, str):
+        raise HTTPException(status_code=400, detail="Invalid farmer ID format")
+
+    print(f"Fetching farms for farmer_id: {farmer_id}")  # Debug line
 
     farms = await farms_collection.find({"farmer_id": farmer_id}).to_list(length=None)
 

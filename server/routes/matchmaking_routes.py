@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException
 from models.models import MatchmakingRequest, MatchmakingResponse
-from db import matchmaking_collection, farms_collection
+from db import matchmaking_collection, farms_collection, farmer_collection
 from datetime import datetime
 from typing import List
 from bson import ObjectId
@@ -17,23 +17,41 @@ async def create_matchmaking_request(data: MatchmakingRequest):
 
     return MatchmakingResponse(id=request_id, **request_doc)
 
-def serialize_req(request: dict) -> dict:
-    request["_id"] = str(request["_id"])
-    if "farmer_id" in request and isinstance(request["farmer_id"], ObjectId):
-        request["farmer_id"] = str(request["farmer_id"])
-    return request
+def serialize_req(req):
+    req["_id"] = str(req["_id"])
+    req["farm_id"] = str(req["farm_id"])
+
+    if "farm" in req:
+        farm = req["farm"]
+        farm["_id"] = str(farm["_id"])
+        farm["farmer_id"] = str(farm["farmer_id"])
+        req["farm"] = farm
+
+    return req
 
 
-@matchmaking_router.get("/requests/farmer/{farmer_id}", response_model=List[MatchmakingResponse])
+@matchmaking_router.get("/requests/farmer/{farmer_id}")
 async def get_farmer_matchmaking_requests(farmer_id: str):
-    requests = await matchmaking_collection.find({"farmer_id": farmer_id}).to_list(length=None)
-    #in each requests find the farm details from farm_id
-    for req in requests:
-        farm = await farms_collection.find_one({"_id": ObjectId(req["farm_id"])})
-        if farm:
-            req["farm_details"] = farm
-        else:
-            req["farm_details"] = None
+    # Find farmer from farmers collection
+    farmer = await farmer_collection.find_one({"_id": ObjectId(farmer_id)})
+    if not farmer:
+        raise HTTPException(status_code=404, detail="Farmer not found")
+    
+    # Find farms for this farmer
+    farms = await farms_collection.find({"farmer_id": str(farmer["_id"])}).to_list(length=None)
+    if not farms:
+        raise HTTPException(status_code=404, detail="No farms found for this farmer")
+
+    # Create a map of farm_id -> farm data for quick lookup
+    farm_map = {str(farm["_id"]): farm for farm in farms}
+    
+    # Fetch matchmaking requests and attach farm info
+    requests = []
+    for farm_id, farm in farm_map.items():
+        farm_requests = await matchmaking_collection.find({"farm_id": farm_id}).to_list(length=None)
+        for req in farm_requests:
+            req["farm"] = farm  # Attach corresponding farm data
+            requests.append(req)
 
     if not requests:
         raise HTTPException(status_code=404, detail="No matchmaking requests found for this farmer")
