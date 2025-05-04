@@ -22,9 +22,6 @@ A FastAPI-based backend service that implements the [Beckn Protocol](https://bec
 
 ## 📁 Project Structure
 
-```
-
-.
 ├── main.py                      # FastAPI app entry point
 ├── contracts/                  # Folder for PDF contract files
 ├── routes/
@@ -34,10 +31,9 @@ A FastAPI-based backend service that implements the [Beckn Protocol](https://bec
 │   ├── order\_routes.py
 │   ├── matchmaking\_routes.py
 │   └── otp\_routes.py
-├── mobile/
+├── frontend/
 │   └── app-release.apk         # Android APK for mobile application
 
-````
 
 ---
 
